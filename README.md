@@ -1,5 +1,5 @@
 # IP-Reassembly
-
+This multi-thread program reassemble IP packets.
 ## The base processing 
 Create the queue for processing the ip fragments,every ip group (has the same fragment ID) needs a node , this node points to a list of the fragments that in the same group. When all the fragments of the list arrive, we need reassemble the list, or the queue that existint is more than 30s,free the list.
 
